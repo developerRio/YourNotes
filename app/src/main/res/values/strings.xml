@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JetpackRoom2</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_notes">Add notes</string>
+    <string name="long_string_waste">This is my new note, click here to edit delete save the entire note, do this stupidity all thetime</string>
+    <string name="delete_all_notes">Delete all Notes</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditActivity">
+
+    <RelativeLayout
+        android:id="@+id/cont_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/headingInputTextLayout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:padding="1dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextHeadingForEdit"
+                android:layout_width="match_parent"
+                android:background="#00000000"
+                android:padding="8dp"
+                android:focusable="true"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:hint="Tittle" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/headingInputTextLayout"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="1dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/updateEditText"
+                android:layout_width="match_parent"
+                android:background="#00000000"
+                android:padding="8dp"
+                android:focusable="true"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:hint="Edit this Note..." />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#ffcce3"
+        android:elevation="18dp"
+        app:fabCradleVerticalOffset="3dp"
+        app:hideOnScroll="true"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:src="@drawable/ic_add_black_24dp"
+        app:fabSize="normal"
+        app:layout_anchor="@+id/bottom_app_bar2"
+        app:rippleColor="#FFF" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
